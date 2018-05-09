@@ -16,12 +16,7 @@ PokerHand::PokerHand(const PokerHand& other) {
 
 PokerHand& PokerHand::operator=(const PokerHand& other) {
 	PokerHand tmp(other);
-	if (this == &other) return *this;
-	delete[] hand;
-	hand = new Card[HAND_SIZE];
-	for (int i = 0; i < HAND_SIZE; ++i) {
-		hand[i] = other.hand[i];
-	}
+	swap(*this, tmp);
 	return *this;
 }
 
@@ -34,4 +29,9 @@ std::ostream& operator<< (std::ostream& os, const PokerHand& phand) {
 		std::cout << phand.hand[i];
 	}
 	return os;
+}
+
+void swap(PokerHand& first, PokerHand& second) {
+	using std::swap;
+	swap(first.hand, second.hand);
 }

@@ -18,6 +18,7 @@ public:
 	~PokerHand();
 
 	friend std::ostream& operator<< (std::ostream& os, const PokerHand& phand);
+	friend void swap(PokerHand& first, PokerHand& second);
 };
 
 #endif
