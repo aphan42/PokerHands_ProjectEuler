@@ -3,14 +3,14 @@
 
 #include <iostream>
 
-enum Suit{CLUBS, DIAMONDS, HEARTS, SPADES};
-enum Rank{TWO, THREE, FOUR, FIVE, SIX, SEVEN, 
+enum class Suit{CLUBS, DIAMONDS, HEARTS, SPADES};
+enum class Rank{TWO, THREE, FOUR, FIVE, SIX, SEVEN, 
 			EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE};
 
 class Card {
 private:
-	Suit suit;
 	Rank rank;
+	Suit suit;
 public:
 	Card();
 	Card(Rank r, Suit s);
