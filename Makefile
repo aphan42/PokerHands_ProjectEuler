@@ -24,5 +24,5 @@ $(TARGET)_debug: $(OBJECTS)
 .PHONY: clean
 
 clean:
-	rm -f *.o $(TARGET)
+	rm -f *.o $(TARGET) $(TARGET)_debug
 
