@@ -115,11 +115,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Card.cpp" />
+    <ClCompile Include="HandEvaluator.cpp" />
     <ClCompile Include="PokerHand.cpp" />
     <ClCompile Include="poker_hands.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
+    <ClInclude Include="HandEvaluator.h" />
     <ClInclude Include="PokerHand.h" />
   </ItemGroup>
   <ItemGroup>

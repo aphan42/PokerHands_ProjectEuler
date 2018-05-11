@@ -24,12 +24,18 @@
     <ClCompile Include="PokerHand.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HandEvaluator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PokerHand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HandEvaluator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

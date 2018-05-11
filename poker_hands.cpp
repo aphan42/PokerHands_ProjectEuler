@@ -5,6 +5,7 @@
 #include <vector>
 
 #include "Card.h"
+#include "HandEvaluator.h"
 #include "PokerHand.h"
 
 Card get_card_from_text(const std::string& card);
@@ -44,10 +45,7 @@ int main(int argc, char** argv) {
 		++count;
 	}
 
-	for (PokerHand* hand : p_hands) {
-		std::cout << *hand;
-	}
-
+	HandEvaluator hand(*p_hands[0], *p_hands[1]);
 	file.close();
 
 	// destroy
