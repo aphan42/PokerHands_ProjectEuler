@@ -49,6 +49,12 @@ int main(int argc, char** argv) {
 	}
 
 	file.close();
+
+	// destroy
+	for (PokerHand* hand : p_hands) {
+		delete hand;
+		hand = nullptr;
+	}
 	return 0;
 }
 
