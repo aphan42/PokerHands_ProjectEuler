@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="p054_poker.txt" />
+    <Text Include="test_hand.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

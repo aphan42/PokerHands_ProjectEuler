@@ -37,5 +37,8 @@
     <Text Include="p054_poker.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="test_hand.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

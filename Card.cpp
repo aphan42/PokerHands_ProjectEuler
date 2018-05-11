@@ -44,8 +44,6 @@ std::ostream& operator<< (std::ostream& os, const Card& card) {
 	case Rank::ACE:
 		os << "Ace";
 		break;
-	default:
-		os << "Error ";
 	}
 	os << " of ";
 	switch (card.suit) {
