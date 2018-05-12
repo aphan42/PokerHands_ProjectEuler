@@ -24,6 +24,11 @@ PokerHand::~PokerHand() {
 	delete[] hand;
 }
 
+void PokerHand::sort_hand() {
+	using std::sort;
+	sort(hand, hand + HAND_SIZE, CardComparator());
+}
+
 std::ostream& operator<< (std::ostream& os, const PokerHand& phand) {
 	for (int i = 0; i < HAND_SIZE; ++i) {
 		std::cout << phand.hand[i];

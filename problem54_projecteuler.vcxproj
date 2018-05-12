@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
+    <ClInclude Include="CardComparator.h" />
     <ClInclude Include="HandEvaluator.h" />
     <ClInclude Include="PokerHand.h" />
   </ItemGroup>

@@ -14,6 +14,7 @@ private:
 public:
 	Card();
 	Card(Rank r, Suit s);
+	Rank get_rank() const;
 	friend std::ostream& operator<< (std::ostream &os, const Card& card);
 };
 

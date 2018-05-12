@@ -44,8 +44,9 @@ int main(int argc, char** argv) {
 		}
 		++count;
 	}
-
+	std::cout << count/5 << " hands read\n";
 	HandEvaluator hand(*p_hands[0], *p_hands[1]);
+	std::cout << hand;
 	file.close();
 
 	// destroy

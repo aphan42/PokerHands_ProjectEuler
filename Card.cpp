@@ -3,6 +3,10 @@
 Card::Card() {}
 Card::Card(Rank r, Suit s) : rank(r), suit(s) {}
 
+Rank Card::get_rank() const {
+	return rank;
+}
+
 std::ostream& operator<< (std::ostream& os, const Card& card) {
 	switch (card.rank) {
 	case Rank::TWO:
